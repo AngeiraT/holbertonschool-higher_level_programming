@@ -7,7 +7,7 @@
 class Square:
     """
     Square class
-    
+
     Attributes:
         size (no type/value verification) : Private instance attribute
     """
