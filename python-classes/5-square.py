@@ -42,7 +42,7 @@ class Square:
     Public instance method that prints in stdout the square with the character #
     """
     def my_print(self):
-        if self._size == 0:
+        if self.__size == 0:
             print()
-        for i in range(0, self.__size):
+        for i in range(self.__size):
             print("#" * self.__size)
