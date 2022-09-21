@@ -4,9 +4,6 @@
 " Write a class Square that defines a square by: (based on 0-square.py) "
 
 
-from lib2to3.pgen2.token import EQUAL
-
-
 class Square:
     """
     Square class
