@@ -56,12 +56,12 @@ Float arguments
 Testing float numbers
 ---------------------
 
-    >>> add_integer(10.5, 5.5)
-    16
-    >>> add_integer(10.5, 5)
-    15.5
-    >>> add_integer(-10.5, -5.5)
-    -16
+    >>> add_integer(5.2, 15.6)
+    20
+
+    >>> add_integer(7, 20.8)
+    27
+
     
 Testing None as arguments
 -------------------------
@@ -98,3 +98,16 @@ Testing arguments- 0,one and more
     >>> add_integer(,)
     Traceback (most recent call last):
     SyntaxError: invalid syntax
+
+TypeError
+=========
+Here we check TypeErrors strings
+
+  >>> add_integer(4, "School")
+  Traceback (most recent call last):
+  TypeError: b must be an integer
+
+  >>> add_integer("School", 9)
+  Traceback (most recent call last):
+  TypeError: a must be an integer
+
