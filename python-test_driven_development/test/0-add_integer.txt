@@ -1,0 +1,49 @@
+======================
+Test cases for 0-add_integer.py
+======================
+
+This library has a function that adds two integers, Tha values
+provided must be only integers of float, otherwise, TypeError 
+will be split with error messages.
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Documentation
+=============
+Here we verify if our modules an funtions are documented.
+We use __doc__ to verify module's and function's Documentation
+    >>> module_doc = __import__("0-add_integer").__doc__
+    >>> print(len(module_doc) > 0)
+    True
+
+    >>> funciont_doc = __import__("0-add_integer").add_integer.__doc__
+    >>> print(len(funciont_doc) > 0)
+    True
+
+Test Cases
+==========
+
+``add_integer`` will take two arguments that must be int or float then return the addition
+here we will address all possible test cases so that the function works properly.
+b equals 98 as the given number.
+
+Using the given b number(98)
+
+    >>> add_integer(10)
+    108
+    >>> add_integer(-5)
+    93
+
+Testing the given additions
+-------------------------
+
+    >>> add_integer(1, 2)
+    3
+
+    >>> add_integer(100, -2)
+    98
+
+Testing both negative numbers
+-----------------------------
+
+    >>> add_integer()
