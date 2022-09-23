@@ -64,11 +64,11 @@ Testing float numbers
 
     
 Testing None as arguments
--------------------------
+=================================
 
     >>> add_integer(None)
     Traceback (most recent call last):
-    TypeError: a must be an integers
+    TypeError: a must be an integer
 
 Testing float overflow and NaN (not a number)
 ---------------------------------------------
