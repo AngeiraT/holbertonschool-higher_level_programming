@@ -1,0 +1,24 @@
+======================
+Test cases for 2-matrix_divided.py
+======================
+
+This library has a function that divides all elements of a matrix.
+The list must have same size cows , and each element must be int or 
+float, div agrument must be int and not 0
+
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+
+Documentation
+=============
+Here we verify if our modules an funtions are documented, for holberton requirements is a must.
+we use __doc__ to verify module's and function's Documentation
+
+    >>> module_doc = __import__("2-matrix_divided").__doc__
+    >>> print(len(module_doc) > 0)
+    True
+
+    >>> funciont_doc = __import__("2-matrix_divided").matrix_divided.__doc__
+    >>> print(len(funciont_doc) > 0)
+    True
+
