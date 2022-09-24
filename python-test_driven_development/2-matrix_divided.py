@@ -1,8 +1,13 @@
 #!/usr/bin/python3
+
+
 """
 This is "2-matrix_divided" module
-this module contains add_integers function that that divides all elements of a matrix
+this module contains add_integers function 
+that that divides all elements of a matrix
 """
+
+
 def matrix_divided(matrix, div):
     """[print the full name]
     Arguments:
