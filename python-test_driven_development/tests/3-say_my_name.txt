@@ -11,7 +11,7 @@ will be split with error messages.
 
 Documentation
 =============
-Here we verify if our modules an funtions are documented, for holberton requirements is a must.
+Here we verify if our modules an funtions are documented
 we use __doc__ to verify module's and function's Documentation
     >>> module_doc = __import__("3-say_my_name").__doc__
     >>> print(len(module_doc) > 0)
