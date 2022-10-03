@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Module for the class Base
 Task 1 : Write the first class Base with a private class attribute
 """
