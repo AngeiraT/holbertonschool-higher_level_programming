@@ -1,15 +1,22 @@
 #!/usr/bin/python3
-"""Class Base"""
-
-from ast import arg
+""" 
+Module for the class Base
+Task 1 : Write the first class Base with a private class attribute
+"""
 
 
 class Base:
+    """
+    Class Base
+    nb_objects = private class attribute
+
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """Constructor Base"""
         if id is not None:
-            id = arg
+            self.id = id
         else:
-            __nb_objects =+ 1 :
-            id = 
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
