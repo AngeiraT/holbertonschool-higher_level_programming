@@ -2,6 +2,8 @@
 """
 Module for the class Rectangle
 Task 2: Write the class Rectangle that inherits from Base
+Task 3: Validate the attribures
+
 """
 
 
