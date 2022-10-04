@@ -5,8 +5,9 @@ Task 2: Write the class Rectangle that inherits from Base
 """
 
 
-from re import X
 from models.base import Base
+
+
 class Rectangle(Base):
     """
     Class Rectangle
@@ -34,10 +35,10 @@ class Rectangle(Base):
     def width(self, value):
         """Width setter"""
         if type(value) is not int:
-            raise TypeError("width must be > 0")
+            raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
-        self.value = value
+        self.__width = value
 
     @property
     def height(self):
@@ -45,7 +46,6 @@ class Rectangle(Base):
 
         Return: private instance attribute
         """
-
         return self.__height
 
     @height.setter
@@ -70,8 +70,8 @@ class Rectangle(Base):
         """X setter"""
         if type(value) is not int:
             raise TypeError("x must be an integer")
-        if value <= 0:
-            raise ValueError("x must be > 0")
+        if value < 0:
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
@@ -87,6 +87,6 @@ class Rectangle(Base):
         """Y setter"""
         if type(value) is not int:
             raise TypeError("y must be an integer")
-        if value <= 0:
-            raise ValueError("y must be > 0")
+        if value < 0:
+            raise ValueError("y must be >= 0")
         self.__y = value
