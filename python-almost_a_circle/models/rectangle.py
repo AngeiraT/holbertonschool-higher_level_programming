@@ -26,7 +26,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """Width property getter
-    
+
         Returns: private instance attribute
         """
         return self.__width
@@ -77,7 +77,7 @@ class Rectangle(Base):
     @property
     def y(self):
         """Y property getter
-        
+
         Return: private isntance attribute
         """
         return self.__y
