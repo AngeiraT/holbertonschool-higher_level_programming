@@ -1,11 +1,10 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """
 Module for the class Square
 Task 10: Write the class Square that inherits from Rectangle
 """
 
 
-from ctypes import sizeof
 from models.rectangle import Rectangle
 
 class Square(Rectangle):
