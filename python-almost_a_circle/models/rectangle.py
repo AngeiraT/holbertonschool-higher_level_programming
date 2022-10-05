@@ -2,7 +2,12 @@
 """
 Module for the class Rectangle
 Task 2: Write the class Rectangle that inherits from Base
-Task 3: Validate the attribures
+Task 3: Validate the attributes of al setter methods
+Task 4: Adding the public method def area that returns the area
+        value of the Rectangle instance
+Task 5: Update the class Rectangle by adding the public method def display
+        (self): that prints in stdout the Rectangle instance with the
+        character #
 
 """
 
@@ -92,3 +97,7 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """Method to calculate the area of Rectangle"""
+        return self.width * self.height
