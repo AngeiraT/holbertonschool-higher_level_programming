@@ -111,4 +111,5 @@ class Rectangle(Base):
                 print(" ", end="")
             for i in range(self.width):
                 print("#", end="")
-            print()       
+            print()
+      
