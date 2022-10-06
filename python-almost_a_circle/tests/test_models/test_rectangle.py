@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """Unittest Rectangle class"""
-import unittest
+
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
-import pep8
 import sys
 from io import StringIO
 
@@ -114,8 +113,3 @@ class TestRectangle(unittest.TestCase):
         r1_dictionary = r1.to_dictionary()
         self.assertEqual(r1_dictionary, {'x': 1, 'y': 9, 'id': 1,
                                         'height': 2, 'width': 10})
-
-    def test_rectangle_pep8(self):
-        pep8style = pep8.StyleGuide(quiet=True)
-        result = pep8style.check_files(['./models/rectangle.py'])
-        self.assertEqual(result.total_errors, 0)

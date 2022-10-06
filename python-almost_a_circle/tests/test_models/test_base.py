@@ -6,7 +6,7 @@ from models.rectangle import Rectangle
 from models.square import Square
 import os
 import json
-import pep8
+
 
 class TestBase(unittest.TestCase):
 
@@ -104,7 +104,4 @@ class TestBase(unittest.TestCase):
         self.assertFalse(list_rectangles_input == list_rectangles_output)
         self.assertFalse(list_rectangles_input is list_rectangles_output)
 
-    def test_base_pep8(self):
-        pep8style = pep8.StyleGuide(quiet=True)
-        result = pep8style.check_files(['./models/base.py'])
-        self.assertEqual(result.total_errors, 0)
+    
