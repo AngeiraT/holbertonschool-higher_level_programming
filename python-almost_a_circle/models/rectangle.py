@@ -117,3 +117,24 @@ class Rectangle(Base):
         """overriding the __str__ method so that it returns a string"""
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.__x, self.__y, self.__width, self.__height))
+    
+    def update(self, *args, **kwargs):
+        """Method that assigns update attributes"""
+        args_list = ["id", "width", "height", "x", "y"]
+        if args and args[0] is not None:
+            if len(args) > len(args_list):
+                max_len = len(args_list)
+            else:
+                max_len = len(args)
+            for i in range(max_len):
+                setattr(self, args_list[i], args[i])
+        elif kwargs is not None:
+            for key in kwargs:
+                if hasattr(self, key) is True:
+                    setattr(self, key, kwargs[key])
+
+    def to_dictionary(self):
+        """Method that returns the dictionary representation of a Rectangle"""
+        key_list = ["id", "width", "height", "x", "y"]
+        value_list = [self.id, self.width, self.height, self.x, self.y]
+        return dict(zip(key_list, value_list))
