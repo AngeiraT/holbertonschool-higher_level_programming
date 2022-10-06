@@ -3,8 +3,6 @@
 Module for the class Square
 Task 10: Write the class Square that inherits from Rectangle
 """
-
-
 from models.rectangle import Rectangle
 
 
@@ -12,7 +10,6 @@ class Square(Rectangle):
     """
     Class Square
     size, x, y = private instance attribute
-
     """
     def __init__(self, size, x=0, y=0, id=None):
         """
