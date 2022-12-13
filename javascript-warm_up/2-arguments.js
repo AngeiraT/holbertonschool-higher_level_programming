@@ -5,10 +5,10 @@ but it is kept "hidden" so what you count in the command line
 starts from 1 (the executable) and so on.
 */
 
-if (process.argv.lenght === 3) {
-    console.log('Argument found');
-  } else if (process.argv.lenght >= 4) {
-    console.log('Arguments found');
-  } else {
-    console.log('No argument');
-  }
+if (process.argv[3]) {
+  console.log('Arguments found');
+} else if (process.argv[2]) {
+  console.log('Argument found');
+} else {
+  console.log('No argument');
+}
