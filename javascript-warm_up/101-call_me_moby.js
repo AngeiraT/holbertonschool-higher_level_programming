@@ -1,6 +1,4 @@
 #!/usr/bin/node
-exports.callMeMoby = function (x, theFunction) {
-    while (x-- > 0) {
-      theFunction();
-    }
+exports.add = function (num1, num2) {
+    return (parseInt(num1) + parseInt(num2));
   };
