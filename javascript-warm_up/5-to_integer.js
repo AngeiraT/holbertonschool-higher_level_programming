@@ -5,4 +5,3 @@ if (!isNaN(n)) {
 } else {
   console.log('Not a number');
 }
-Footer
