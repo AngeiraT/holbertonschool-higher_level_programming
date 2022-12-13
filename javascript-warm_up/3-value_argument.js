@@ -1,7 +1,8 @@
-#!/usr/bin/node
+#!/usr/bin/nodejs
 
-if (process.argv[2]) { // This is an array containing the cmd. line arguments
-    console.log(process.argv[2]);
-  } else {
-    console.log('No argument');
-  }
+const args = process.argv;
+if (args[2]) {
+  console.log(args[2]);
+} else {
+  console.log('No argument');
+}
