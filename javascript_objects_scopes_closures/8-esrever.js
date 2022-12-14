@@ -1,9 +1,7 @@
 #!/usr/bin/node
 
-let start = 0;
-
 exports.esrever = function (list) {
-    
+    let start = 0;
     let end = list.length - 1;
     const arr = [...list];
   
